@@ -36,7 +36,7 @@ const HomeScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      title: 'Signal',
+      title: 'Bubble🫧',
       headerStyle: { backgroundColor: '#fff' },
       headerTitleStyle: { color: 'black' },
       headerTintColor: 'black',

@@ -173,11 +173,11 @@ export default function ChatScreen({ navigation, route }) {
                 value={input}
                 onChangeText={(text) => setInput(text)}
                 onSubmitEditing={sendMessage}
-                placeholder="Single Message"
+                placeholder="Bubble"
                 style={styles.textInput}
               />
               <TouchableOpacity onPress={sendMessage} activeOpacity={0.5}>
-                <Ionicons name="send" size={24} color="#2B68E6" />
+                <Ionicons name="send" size={24} color="#C8AAF4" />
               </TouchableOpacity>
             </View>
           </>
@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
   },
   sender: {
     padding: 15,
-    backgroundColor: '#2068E6',
+    backgroundColor: '#C8AAF4',
     alignSelf: 'flex-start',
     borderRadius: 20,
     margin: 15,

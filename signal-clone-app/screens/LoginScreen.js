@@ -1,4 +1,4 @@
-import { KeyboardAvoidingView, StyleSheet, Text, View } from 'react-native';
+import { KeyboardAvoidingView, StyleSheet, View } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { Button, Input, Image } from 'react-native-elements';
 import { StatusBar } from 'expo-status-bar';
@@ -27,7 +27,7 @@ const LoginScreen = ({ navigation }) => {
       <StatusBar style="light" />
       <Image
         source={{
-          uri: 'https://cdn.discordapp.com/attachments/974721169284550707/1076051147699265586/WwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBweGfxn8f3r5PzFDcHAAAAABJRU5ErkJggg.png',
+          uri: 'https://cdn.discordapp.com/attachments/974721169284550707/1076396281758494742/3d-speech-bubble-with-quotes-icons-on-a-purple-background-minimal-blank-3d-chat-boxes-sign-3d-and-shadow-illustration-vector.png',
         }}
         style={{ width: 200, height: 200, borderRadius: 100 }}
       />
@@ -48,8 +48,15 @@ const LoginScreen = ({ navigation }) => {
           onSubmitEditing={signIn}
         />
       </View>
-      <Button containerStyle={styles.button} onPress={signIn} title="Login" />
       <Button
+        buttonStyle={{ backgroundColor: '#C8AAF4' }}
+        containerStyle={styles.button}
+        onPress={signIn}
+        title="Login"
+      />
+      <Button
+        buttonStyle={{ borderColor: '#C8AAF4' }}
+        titleStyle={{ color: '#C8AAF4' }}
         onPress={() => navigation.navigate('Register')}
         containerStyle={styles.button}
         type="outline"

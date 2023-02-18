@@ -68,6 +68,7 @@ const RegisterScreen = ({ navigation }) => {
         />
       </View>
       <Button
+        buttonStyle={{ backgroundColor: '#C8AAF4' }}
         containerStyle={styles.button}
         raised
         onPress={register}
